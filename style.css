@@ -43,6 +43,53 @@
   height: auto;
 }
 
+.form-container{
+  margin-bottom: 25px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+#formPrincipal{
+  display: flex;
+  justify-content: center;
+}
+
+#formBusca{
+  background-color: #f0d399f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.216);
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", serif;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.form-label{
+  font-weight: bold;
+}
+
+.btn-primary.btn-primary.btn-lg,.btn.btn-outline-primary{
+  background-color: #0059ab;
+  font-size: 15px;
+  color: #f6f6f6;
+}
+
+.btn.btn-outline-primary:hover{
+  background-color: #99caf7;
+  font-size: 15px;
+  color: #0059ab;
+  border: none;
+}
+
+.btn-primary.btn-primary.btn-lg:hover{
+  background-color: #99caf7;
+  font-size: 15px;
+  color: #0059ab;
+  border: none;
+}
+
 #titulo-pacotes {
   font-family: "Montserrat", serif;
   padding: 0.25em;
@@ -64,7 +111,7 @@
 .quartoPacote {
   background-color: #f6f6f6;
   width: auto;
-  height: 450px;
+  height: 550px;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.216);
   justify-content: space-around;
@@ -193,7 +240,7 @@
 .quartoDestino {
   background-color: #f6f6f6;
   width: 280px;
-  height: 620px;
+  height: 720px;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.216);
   justify-content: space-around;
