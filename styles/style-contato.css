@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*Lista de oferecimentos do site*/
+.listaProdutos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navegacaoProdutosItens {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /*fotmatação dos links (cor e margem interna; lado direito)*/
+  #navegacao a {
+    color: #f6f6f6;
+    margin-right: 10px;
+  }
+  
+  /*fotmatação do menu de navegação.*/
+  #navegacao {
+    background-color: #0059ab;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    padding: 10px;
+    align-content: center;
+  }
+  
+  .home img{
+    width: 15px;
+    height: auto;
+  }

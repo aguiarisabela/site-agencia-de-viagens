@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recode - Viagens</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style-ofertas.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Borel&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Menu de navegação do site -->
+  <div id="navegacao">
+    <ul class="listaProdutos">
+      <a href="index.html"><img src="img/home.png" alt="desenho em linha de uma casa, para voltar ao início do site"
+          class="home"></a>
+      <li class="navegacaoProdutosItens"><a href="">Passagens</a></li>
+      <li class="navegacaoProdutosItens"><a href="destinos.html">Destinos</a></li>
+      <li class="navegacaoProdutosItens"><a href="pacotes.html">Pacotes</a></li>
+      <li class="navegacaoProdutosItens"><a href="">Hospedagem</a></li>
+      <li class="navegacaoProdutosItens"><a href="">Seguro</a></li>
+      <li class="navegacaoProdutosItens"><a href="">Aluguéis</a></li>
+      <li class="navegacaoProdutosItens"><a href="ofertas.html">Ofertas</a></li>
+      <li class="navegacaoProdutosItens"><a href="contato.html">Contato</a></li>
+    </ul>
+</div>
+  <main>
+    <div class="form-container">
+      <!-- Botões de alternância -->
+      <div class="tab-buttons d-flex">
+        <button class="btn btn-outline-primary active" id="idaEVolta">Ida e Volta</button>
+        <button class="btn btn-outline-primary" id="somenteIda">Somente Ida</button>
+        <button class="btn btn-outline-primary" id="multidestinos">Multidestinos</button>
+      </div>
+  </main>
+
+  <main>
+    <div id="formPrincipal">
+      <!-- Formulário -->
+      <form id="formBusca" class="row g-3">
+        <!-- Origem e Destino -->
+        <div class="col-md-6">
+          <label for="origem" class="form-label">Origem</label>
+          <input type="text" class="form-control" id="origemForm" name="origem" placeholder="Cidade ou aeroporto"
+            required>
+        </div>
+        <div class="col-md-6">
+          <label for="destino" class="form-label">Destino</label>
+          <input type="text" class="form-control" id="destinoForm" name="destino" placeholder="Cidade ou aeroporto"
+            required>
+        </div>
+
+        <!-- Datas -->
+        <div class="col-md-6">
+          <label for="dataIda" class="form-label">Data de Ida</label>
+          <input type="date" class="form-control" id="dataIda" name="dataIda" required>
+        </div>
+        <div class="col-md-6" id="campoDataVolta">
+          <label for="dataVolta" class="form-label">Data de Volta</label>
+          <input type="date" class="form-control" id="dataVolta" name="dataVolta">
+        </div>
+
+        <!-- Passageiros e Classe -->
+        <div class="col-md-6">
+          <label for="passageiros" class="form-label">Passageiros</label>
+          <input type="number" class="form-control" id="passageiros" name="passageiros" min="1" value="1" required>
+        </div>
+        <div class="col-md-6">
+          <label for="classe" class="form-label">Classe</label>
+          <select class="form-select" id="classe" name="classe">
+            <option value="economica">Econômica</option>
+            <option value="executiva">Executiva</option>
+            <option value="primeira">Primeira Classe</option>
+          </select>
+        </div>
+
+        <!-- Botão de busca -->
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary btn-lg">Buscar Passagens</button>
+        </div>
+      </form>
+    </div>
+
+  </main>
+
+  <!-- conteúdo principal do site, onde os destinos e promoções serão colocados -->
+  <main>
+    <h2 id="titulo-pacotes">&#9992 Passagens aéreas nacionais mais baratas!</h2>
+    <div id="pacotes">
+      <a href="" class="estilizacao-link">
+        <div class="primeiroPacote">
+          <img src="img/voos/3.png" alt="imagem das casas de Salvador." />
+          <div id="informacoes-pacote">
+            <p class="titulo-pacote">Passagem</p>
+            <p class="titulo-cidade">Voo para Salvador</p>
+            <p class="saida">Saindo de São Paulo</p>
+            <p class="descricao-1">Passagens</p>
+            <hr>
+              <p class="subtitulo-preco">Preço ida e volta</p>
+              <p class="preco-promocional-final">R$<spam class="preco-final-dois">700,00</spam>
+              </p>
+            </div>
+      </a>
+    </div>
+
+    <div class="segundoPacote">
+      <a href="pacotes/roma.html" class="estilizacao-link">
+        <img src="img/voos/4.png" alt="imagem panoramica do Pao de Açúcar." />
+            <div id="informacoes-pacote">
+              <p class="titulo-pacote">Passagem</p>
+              <p class="titulo-cidade">Voo para Rio de Janeiro</p>
+              <p class="saida">Saindo de São Paulo</p>
+              <p class="descricao-1">Passagens</p>
+              <hr>
+                <p class="subtitulo-preco">Preço ida e volta</p>
+                <p class="preco-promocional-final">R$<spam class="preco-final-dois">500,00</spam>
+                </p>
+              </div>
+            </a>
+        </div>
+     
+
+    <div class="terceiroPacote">
+      <a href="pacotes/paris.html" class="estilizacao-link">
+        <img src="img/voos/5.png" alt="imagem de Paris, com a Torre Eiffel ao fundo, com um banner do nome da cidade." />
+        <div id="informacoes-pacote">
+            <p class="titulo-pacote">Passagem</p>
+            <p class="titulo-cidade">Voo para Maceió</p>
+            <p class="saida">Saindo de São Paulo</p>
+            <p class="descricao-1">Passagens</p>
+            <hr>
+              <p class="subtitulo-preco">Preço ida e volta</p>
+              <p class="preco-promocional-final">R$<spam class="preco-final-dois">900,00</spam>
+              </p>
+            </div>
+        </div>
+      </a>
+
+    <div class="quartoPacote">
+      <a href="pacotes/caribe.html" class="estilizacao-link">
+        <img src="img/voos/6.png"
+          alt="imagem da praia do Caribe, com aluns coqueiros, com um banner do nome da cidade." />
+          <div id="informacoes-pacote">
+            <p class="titulo-pacote">Passagem</p>
+            <p class="titulo-cidade">Passagem para 
+                Porto de Galinhas</p>
+            <p class="saida">Saindo de São Paulo</p>
+            <p class="descricao-1">Passagens</p>
+            <hr>
+              <p class="subtitulo-preco">Preço ida e volta</p>
+              <p class="preco-promocional-final">R$<spam class="preco-final-dois">1.000,00</spam>
+              </p>
+            </div>
+    </div>
+    </a>
+
+    <div id="pacotes">
+        <a href="pacotes/londres.html" class="estilizacao-link">
+          <div class="primeiroPacote">
+            <img src="img/londres.png" alt="imagem de Londres, com um banner do nome da cidade." />
+            <div id="informacoes-pacote">
+              <p class="titulo-pacote">Pacote</p>
+              <p class="titulo-cidade">Pacotes para Londres</p>
+              <p class="saida">Saindo de São Paulo</p>
+              <p class="descricao-1">Passagens</p>
+              <hr>
+                <p class="subtitulo-preco">Preço ida e volta</p>
+                <p class="preco-promocional-final">R$<spam class="preco-final-dois">500,00</spam>
+                </p>
+              </div>
+        </a>
+      </div>
+  
+      <div class="segundoPacote">
+        <a href="pacotes/roma.html" class="estilizacao-link">
+          <img src="img/roma.png" alt="imagem do Coliseu em Roma, com um banner do nome da cidade." />
+              <div id="informacoes-pacote">
+                <p class="titulo-pacote">Pacote</p>
+                <p class="titulo-cidade">Pacotes para Londres</p>
+                <p class="saida">Saindo de São Paulo</p>
+                <p class="descricao-1">Passagens</p>
+                <hr>
+                  <p class="subtitulo-preco">Preço ida e volta</p>
+                  <p class="preco-promocional-final">R$<spam class="preco-final-dois">500,00</spam>
+                  </p>
+                </div>
+              </a>
+          </div>
+       
+  
+      <div class="terceiroPacote">
+        <a href="pacotes/paris.html" class="estilizacao-link">
+          <img src="img/paris.png" alt="imagem de Paris, com a Torre Eiffel ao fundo, com um banner do nome da cidade." />
+          <div id="informacoes-pacote">
+              <p class="titulo-pacote">Pacote</p>
+              <p class="titulo-cidade">Pacotes para Londres</p>
+              <p class="saida">Saindo de São Paulo</p>
+              <p class="descricao-1">Passagens</p>
+              <hr>
+                <p class="subtitulo-preco">Preço ida e volta</p>
+                <p class="preco-promocional-final">R$<spam class="preco-final-dois">500,00</spam>
+                </p>
+              </div>
+          </div>
+        </a>
+  
+      <div class="quartoPacote">
+        <a href="pacotes/caribe.html" class="estilizacao-link">
+          <img src="img/caribe.png"
+            alt="imagem da praia do Caribe, com aluns coqueiros, com um banner do nome da cidade." />
+            <div id="informacoes-pacote">
+              <p class="titulo-pacote">Pacote</p>
+              <p class="titulo-cidade">Pacotes para Londres</p>
+              <p class="saida">Saindo de São Paulo</p>
+              <p class="descricao-1">Passagens</p>
+              <hr>
+                <p class="subtitulo-preco">Preço ida e volta</p>
+                <p class="preco-promocional-final">R$<spam class="preco-final-dois">500,00</spam>
+                </p>
+              </div>
+      </div>
+      </a>
+
+      <div id="pacotes">
+        <a href="pacotes/londres.html" class="estilizacao-link">
+          <div class="primeiroPacote">
+            <img src="img/londres.png" alt="imagem de Londres, com um banner do nome da cidade." />
+            <div id="informacoes-pacote">
+              <p class="titulo-pacote">Pacote</p>
+              <p class="titulo-cidade">Pacotes para Londres</p>
+              <p class="saida">Saindo de São Paulo</p>
+              <p class="descricao-1">Passagens</p>
+              <hr>
+                <p class="subtitulo-preco">Preço ida e volta</p>
+                <p class="preco-promocional-final">R$<spam class="preco-final-dois">500,00</spam>
+                </p>
+              </div>
+        </a>
+      </div>
+  
+      <div class="segundoPacote">
+        <a href="pacotes/roma.html" class="estilizacao-link">
+          <img src="img/roma.png" alt="imagem do Coliseu em Roma, com um banner do nome da cidade." />
+              <div id="informacoes-pacote">
+                <p class="titulo-pacote">Pacote</p>
+                <p class="titulo-cidade">Pacotes para Londres</p>
+                <p class="saida">Saindo de São Paulo</p>
+                <p class="descricao-1">Passagens</p>
+                <hr>
+                  <p class="subtitulo-preco">Preço ida e volta</p>
+                  <p class="preco-promocional-final">R$<spam class="preco-final-dois">500,00</spam>
+                  </p>
+                </div>
+              </a>
+          </div>
+       
+  
+      <div class="terceiroPacote">
+        <a href="pacotes/paris.html" class="estilizacao-link">
+          <img src="img/paris.png" alt="imagem de Paris, com a Torre Eiffel ao fundo, com um banner do nome da cidade." />
+          <div id="informacoes-pacote">
+              <p class="titulo-pacote">Pacote</p>
+              <p class="titulo-cidade">Pacotes para Londres</p>
+              <p class="saida">Saindo de São Paulo</p>
+              <p class="descricao-1">Passagens</p>
+              <hr>
+                <p class="subtitulo-preco">Preço ida e volta</p>
+                <p class="preco-promocional-final">R$<spam class="preco-final-dois">500,00</spam>
+                </p>
+              </div>
+          </div>
+        </a>
+  
+      <div class="quartoPacote">
+        <a href="pacotes/caribe.html" class="estilizacao-link">
+          <img src="img/caribe.png"
+            alt="imagem da praia do Caribe, com aluns coqueiros, com um banner do nome da cidade." />
+            <div id="informacoes-pacote">
+              <p class="titulo-pacote">Pacote</p>
+              <p class="titulo-cidade">Pacotes para Londres</p>
+              <p class="saida">Saindo de São Paulo</p>
+              <p class="descricao-1">Passagens</p>
+              <hr>
+                <p class="subtitulo-preco">Preço ida e volta</p>
+                <p class="preco-promocional-final">R$<spam class="preco-final-dois">500,00</spam>
+                </p>
+              </div>
+      </div>
+      </a>
+  </main>
+  <!-- Rodapé do site. -->
+  <footer id="rodapePrincipal">
+    Todos os direitos reservados a Isabela Castro&COPY;
+  </footer>
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
