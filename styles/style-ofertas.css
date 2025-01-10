@@ -108,7 +108,15 @@
   .primeiroPacote,
   .segundoPacote,
   .terceiroPacote,
-  .quartoPacote {
+  .quartoPacote,
+  .quintoPacote,
+  .sextoPacote,
+  .setimoPacote,
+  .oitavoPacote,
+  .nonoPacote,
+  .decimoPacote,
+  .decimopPacote,
+  .decimoSegPacote{
     background-color: #f6f6f6;
     width: 350px;
     height: 500px;
@@ -122,7 +130,19 @@
   .primeiroPacote img,
   .segundoPacote img,
   .terceiroPacote img,
-  .quartoPacote img {
+  .quartoPacote img
+  .primeiroPacote img,
+  .segundoPacote img,
+  .terceiroPacote img,
+  .quartoPacote img,
+  .quintoPacote img,
+  .sextoPacote img,
+  .setimoPacote img,
+  .oitavoPacote img,
+  .nonoPacote img,
+  .decimoPacote img,
+  .decimopPacote img,
+  .decimoSegPacote img{
     width: 350px;
     border-radius: 10px;
   }
@@ -214,4 +234,17 @@
   
   a:hover {
     color: #555; /* Cor altera ao passar o mouse em cima do card*/
+  }
+
+  #pacotes-extra {
+    margin-top: 20px;
+  }
+  
+  #ver-mais-container {
+    margin-top: 20px;
+  }
+  
+  #btnVerMais {
+    margin-top: 10px;
+    width: 100%;
   }

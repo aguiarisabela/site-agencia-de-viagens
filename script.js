@@ -32,3 +32,16 @@ function alternarAtivo(botaoAtivo) {
   // Adiciona a classe "active" ao botão clicado
   botaoAtivo.classList.add("active");
 }
+
+//botão "Ver mais" na página de ofertas
+
+const btnVerMais = document.getElementById("ver-mais-container");
+const pacotesExtras = document.getElementById('pacotes-extras')
+
+btnVerMais.addEventListener('click', function() {
+  // Altere o estilo para exibir os pacotes
+  pacotesExtra.style.display = 'block';
+
+  // Depois que os pacotes extra forem exibidos, esconda o botão "Ver Mais"
+  btnVerMais.style.display = 'none';
+});

@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recode - Viagens</title>
+    <title>Recode - Destinos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,10 +23,68 @@
           <li class="navegacaoProdutosItens"><a href="">Hospedagem</a></li>
           <li class="navegacaoProdutosItens"><a href="">Seguro</a></li>
           <li class="navegacaoProdutosItens"><a href="">Aluguéis</a></li>
-          <li class="navegacaoProdutosItens"><a href="">Ofertas</a></li>
+          <li class="navegacaoProdutosItens"><a href="ofertas.html">Ofertas</a></li>
           <li class="navegacaoProdutosItens"><a href="">Contato</a></li>
         </ul>
       </div>
+      <main>
+        <div class="form-container">
+          <!-- Botões de alternância -->
+          <div class="tab-buttons d-flex">
+            <button class="btn btn-outline-primary active" id="idaEVolta">Ida e Volta</button>
+            <button class="btn btn-outline-primary" id="somenteIda">Somente Ida</button>
+            <button class="btn btn-outline-primary" id="multidestinos">Multidestinos</button>
+          </div>
+      </main>
+    
+      <main>
+        <div id="formPrincipal">
+          <!-- Formulário -->
+          <form id="formBusca" class="row g-3">
+            <!-- Origem e Destino -->
+            <div class="col-md-6">
+              <label for="origem" class="form-label">Origem</label>
+              <input type="text" class="form-control" id="origemForm" name="origem" placeholder="Cidade ou aeroporto"
+                required>
+            </div>
+            <div class="col-md-6">
+              <label for="destino" class="form-label">Destino</label>
+              <input type="text" class="form-control" id="destinoForm" name="destino" placeholder="Cidade ou aeroporto"
+                required>
+            </div>
+    
+            <!-- Datas -->
+            <div class="col-md-6">
+              <label for="dataIda" class="form-label">Data de Ida</label>
+              <input type="date" class="form-control" id="dataIda" name="dataIda" required>
+            </div>
+            <div class="col-md-6" id="campoDataVolta">
+              <label for="dataVolta" class="form-label">Data de Volta</label>
+              <input type="date" class="form-control" id="dataVolta" name="dataVolta">
+            </div>
+    
+            <!-- Passageiros e Classe -->
+            <div class="col-md-6">
+              <label for="passageiros" class="form-label">Passageiros</label>
+              <input type="number" class="form-control" id="passageiros" name="passageiros" min="1" value="1" required>
+            </div>
+            <div class="col-md-6">
+              <label for="classe" class="form-label">Classe</label>
+              <select class="form-select" id="classe" name="classe">
+                <option value="economica">Econômica</option>
+                <option value="executiva">Executiva</option>
+                <option value="primeira">Primeira Classe</option>
+              </select>
+            </div>
+    
+            <!-- Botão de busca -->
+            <div class="col-12 text-center">
+              <button type="submit" class="btn btn-primary btn-lg">Buscar Passagens</button>
+            </div>
+          </form>
+        </div>
+    
+      </main>
       <main>
         <h2 id="titulo-destinos">Destinos</h2>
         <div id="destino">
@@ -113,6 +172,7 @@
       </main>
       <!-- Rodapé do site. -->
       <footer id="rodapePrincipal">
-        Todos os direitos reservados a Isabela Castro&COPY;
+        Desenvolvido por Isabela Castro | Projeto fictício para Recode Pro IA 2024&COPY;
       </footer>
   </body>
+</html>
