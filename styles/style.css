@@ -38,9 +38,31 @@
   align-content: center;
 }
 
+.loginNav{
+  display: flex;
+  background-color: #e5920c;
+  width: 180px;
+  color: #f6f6f6;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.loginNav img {
+  width: 35;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.loginNav span {
+  margin-left: auto;
+  padding: 0 10px;
+}
+
 .home img{
-  width: 15px;
-  height: auto;
+  width: 35;
+  height: 35px;
+  border-radius: 50%;
 }
 
 .form-container{

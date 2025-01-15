@@ -35,9 +35,11 @@ function alternarAtivo(botaoAtivo) {
 
 //botão "Ver mais" na página de ofertas
 
-const btnVerMais = document.getElementById("ver-mais-container");
-const pacotesExtras = document.getElementById('pacotes-extras')
+// Selecione o botão "Ver Mais" e o contêiner de pacotes extras
+const btnVerMais = document.getElementById('btnVerMais');
+const pacotesExtra = document.getElementById('pacotes-extra');
 
+// Adicione o evento de clique
 btnVerMais.addEventListener('click', function() {
   // Altere o estilo para exibir os pacotes
   pacotesExtra.style.display = 'block';
