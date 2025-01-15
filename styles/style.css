@@ -290,3 +290,68 @@ a:visited {
 a:hover {
   color: #555; /* Cor altera ao passar o mouse em cima do card*/
 }
+
+@media (min-width: 769px) {
+  #menu-hamburguer .menu {
+    display: none; /* Esconde o ícone do menu em telas grandes */
+  }
+
+  .listaProdutos {
+    display: flex; /* Exibe o menu horizontalmente */
+    position: static;
+    flex-direction: row; /* Coloca os itens em linha */
+    padding: 0;
+  }
+
+  .listaProdutos li {
+    margin: 0 15px; /* Adiciona um espaço entre os itens */
+  }
+}
+
+
+/* Responsividade - Exibe o menu apenas em telas pequenas */
+@media (max-width: 768px) {  /* Ajuste esse valor conforme necessário */
+  .listaProdutos {
+    display: flex; /* Exibe o menu normalmente */
+    flex-direction: column; /* Alinha os itens na vertical */
+    padding: 0;
+  }
+
+  .navegacaoProdutosItens {
+    margin: 10px 0; /* Espaçamento entre os itens no menu */
+  }
+
+  /* Ajusta a exibição da imagem home no menu */
+  .home {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Para desktops ou telas grandes, o menu não será exibido */
+@media (min-width: 769px) {
+  .listaProdutos {
+    display: flex; /* Exibe o menu normalmente em desktops */
+    position: static;
+    flex-direction: row;
+    padding: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1045px) {
+  .listaProdutos {
+    display: flex; /* Exibe o menu normalmente */
+    flex-direction: column; /* Alinha os itens na vertical */
+    padding: 0;
+  }
+
+  .navegacaoProdutosItens {
+    margin: 10px 0; /* Espaçamento entre os itens no menu */
+  }
+
+  /* Ajusta a exibição da imagem home no menu */
+  .home {
+    width: 30px;
+    height: 30px;
+  }
+}

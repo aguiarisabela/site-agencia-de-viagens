@@ -30,8 +30,96 @@
     padding: 10px;
     align-content: center;
   }
+  .loginNav{
+    display: flex;
+    background-color: #e5920c;
+    width: 180px;
+    color: #f6f6f6;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
   
+  .loginNav img {
+    width: 35;
+    height: 35px;
+    border-radius: 50%;
+  }
+  
+  .loginNav span {
+    margin-left: auto;
+    padding: 0 10px;
+  }
   .home img{
     width: 15px;
     height: auto;
+  }
+
+  @media (min-width: 769px) {
+    #menu-hamburguer .menu {
+      display: none; /* Esconde o ícone do menu em telas grandes */
+    }
+  
+    .listaProdutos {
+      display: flex; /* Exibe o menu horizontalmente */
+      position: static;
+      flex-direction: row; /* Coloca os itens em linha */
+      padding: 0;
+    }
+  
+    .listaProdutos li {
+      margin: 0 15px; /* Adiciona um espaço entre os itens */
+    }
+  }
+  
+  
+  /* Responsividade - Exibe o menu apenas em telas pequenas */
+  @media (max-width: 768px) {  /* Ajuste esse valor conforme necessário */
+  
+    .listaProdutos {
+      display: flex; /* Exibe o menu normalmente */
+      flex-direction: column; /* Alinha os itens na vertical */
+      padding: 0;
+    }
+  
+    .navegacaoProdutosItens {
+      margin: 10px 0; /* Espaçamento entre os itens no menu */
+    }
+  
+    /* Ajusta a exibição da imagem home no menu */
+    .home {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  /* Para desktops ou telas grandes, o menu não será exibido */
+  @media (min-width: 769px) {
+    #menu-hamburguer .menu {
+      display: none; /* Esconde o ícone de menu em telas grandes */
+    }
+    .listaProdutos {
+      display: flex; /* Exibe o menu normalmente em desktops */
+      position: static;
+      flex-direction: row;
+      padding: 0;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1045px) {
+    .listaProdutos {
+      display: flex; /* Exibe o menu normalmente */
+      flex-direction: column; /* Alinha os itens na vertical */
+      padding: 0;
+    }
+  
+    .navegacaoProdutosItens {
+      margin: 10px 0; /* Espaçamento entre os itens no menu */
+    }
+  
+    /* Ajusta a exibição da imagem home no menu */
+    .home {
+      width: 30px;
+      height: 30px;
+    }
   }
