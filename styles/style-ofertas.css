@@ -256,7 +256,10 @@
   }
 
   #pacotes-extra {
-    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /*centraliza todos os cards*/
+    gap: 20px;
   }
   
   #ver-mais-container {
@@ -306,20 +309,22 @@
       margin-bottom: 0.5em;
     }
     #pacotes {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
       justify-content: center;
-      flex-direction: column;
-      gap: 20px;
-      margin: 25px;
     }
     #pacotes-extra{
-      display: flex;
-      flex-wrap: wrap;
+      display: none;
       justify-content: center;
-      flex-direction: column;
-      gap: 20px;
-      margin: 25px;
+    }
+    .btn-primary.btn-primary.btn-lg,.btn.btn-outline-primary{
+      max-width: 100%;
+      background-color: #0059ab;
+      font-size: 15px;
+      color: #f6f6f6;
+      max-width: 100%;
+    }
+    #btnVerMais{
+      width: auto;
     }
   }
   
@@ -350,6 +355,29 @@
       width: 30px;
       height: 30px;
     }
+    .btn-primary.btn-primary.btn-lg,.btn.btn-outline-primary{
+      max-width: 100%;
+      background-color: #0059ab;
+      font-size: 15px;
+      color: #f6f6f6;
+      max-width: 50%;
+    }
+    
+    .btn-primary.btn-primary.btn-lg:hover{
+      background-color: #99caf7;
+      font-size: 15px;
+      color: #0059ab;
+      border: none;
+    }
+    #pacotes {
+      display: grid;
+      justify-content: center;
+    }
+    #pacotes-extra{
+      display: none;
+      justify-content: center;
+    }
+    
   }
 
   @media (min-width: 769px) {
