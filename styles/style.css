@@ -4,10 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*fotmatação da imagem principal, por enquanto apenas uma. No futuro adicionarei um carrossel*/
-#cabecalhoCarrossel img {
+ /*fotmatação da imagem principal, por enquanto apenas uma. No futuro adicionarei um carrossel*/
+ #cabecalhoCarrossel img {
   width: 100%;
-  height: 100%;
 }
 
 /*Lista de oferecimentos do site*/
@@ -37,7 +36,6 @@
   padding: 10px;
   align-content: center;
 }
-
 .loginNav{
   display: flex;
   background-color: #e5920c;
@@ -58,11 +56,9 @@
   margin-left: auto;
   padding: 0 10px;
 }
-
 .home img{
-  width: 35;
-  height: 35px;
-  border-radius: 50%;
+  width: 15px;
+  height: auto;
 }
 
 .form-container{
@@ -291,34 +287,30 @@ a:hover {
   color: #555; /* Cor altera ao passar o mouse em cima do card*/
 }
 
-@media (min-width: 769px) {
-  #menu-hamburguer .menu {
-    display: none; /* Esconde o ícone do menu em telas grandes */
+/*dispositivos pequenos*/
+@media (max-width: 768px) { 
+        
+  #formBusca{
+    background-color: #f0d399f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.216);
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", serif;
+    border-radius: 30px;
+    padding: 15px;
   }
 
-  .listaProdutos {
-    display: flex; /* Exibe o menu horizontalmente */
-    position: static;
-    flex-direction: row; /* Coloca os itens em linha */
-    padding: 0;
-  }
-
-  .listaProdutos li {
-    margin: 0 15px; /* Adiciona um espaço entre os itens */
-  }
-}
-
-
-/* Responsividade - Exibe o menu apenas em telas pequenas */
-@media (max-width: 768px) {  /* Ajuste esse valor conforme necessário */
   .listaProdutos {
     display: flex; /* Exibe o menu normalmente */
     flex-direction: column; /* Alinha os itens na vertical */
-    padding: 0;
+    font-size: 13px;
+    
   }
 
   .navegacaoProdutosItens {
-    margin: 10px 0; /* Espaçamento entre os itens no menu */
+    margin: 5px; /* Espaçamento entre os itens no menu */
+    
   }
 
   /* Ajusta a exibição da imagem home no menu */
@@ -326,9 +318,107 @@ a:hover {
     width: 30px;
     height: 30px;
   }
+  #titulo-pacotes {
+    font-family: "Montserrat", serif;
+    padding: 0.10em;
+    margin-left: 30px;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  #pacotes {
+    display: grid;
+    justify-content: center;
+  }
+  #pacotes-extra{
+    display: none;
+    justify-content: center;
+  }
+
+  #btnVerMais{
+    width: auto;
+  }
+
+  .loginNav{
+    display: flex;
+    background-color: #e5920c;
+    width: 150px;
+    color: #f6f6f6;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .loginNav img {
+    width: 25;
+    height: 25px;
+    border-radius: 50%;
+  }
+  
 }
 
-/* Para desktops ou telas grandes, o menu não será exibido */
+/*dispositivos médios*/
+@media (min-width: 769px) and (max-width: 1045px) {
+        
+  #formBusca{
+    background-color: #f0d399f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.216);
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", serif;
+    border-radius: 30px;
+    padding: 15px;
+  }
+  .listaProdutos {
+    display: flex; /* Exibe o menu normalmente */
+    flex-direction: column; /* Alinha os itens na vertical */
+    font-size: 13px;
+  }
+
+  .navegacaoProdutosItens {
+    margin: 5px; /* Espaçamento entre os itens no menu */
+  }
+
+  /* Ajusta a exibição da imagem home no menu */
+  .home {
+    width: 30px;
+    height: 30px;
+  }
+  #pacotes {
+    display: grid;
+    justify-content: center;
+  }
+  #pacotes-extra{
+    display: none;
+    justify-content: center;
+  }
+  #btnVerMais{
+    width: auto;
+  }
+
+  .loginNav{
+    display: flex;
+    background-color: #e5920c;
+    width: 90px;
+    color: #f6f6f6;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .loginNav span{
+    display: none;
+  }
+  
+  .loginNav img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+  
+}
+
+/*desktop*/
 @media (min-width: 769px) {
   .listaProdutos {
     display: flex; /* Exibe o menu normalmente em desktops */
@@ -336,22 +426,7 @@ a:hover {
     flex-direction: row;
     padding: 0;
   }
-}
-
-@media (min-width: 769px) and (max-width: 1045px) {
-  .listaProdutos {
-    display: flex; /* Exibe o menu normalmente */
-    flex-direction: column; /* Alinha os itens na vertical */
-    padding: 0;
-  }
-
-  .navegacaoProdutosItens {
-    margin: 10px 0; /* Espaçamento entre os itens no menu */
-  }
-
-  /* Ajusta a exibição da imagem home no menu */
-  .home {
-    width: 30px;
-    height: 30px;
+  #btnVerMais{
+    width: auto;
   }
 }

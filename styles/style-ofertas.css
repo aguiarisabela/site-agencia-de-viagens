@@ -272,7 +272,7 @@
   }
   
   
-
+/*dispositivos pequenos*/
   @media (max-width: 768px) { 
         
     #formBusca{
@@ -289,11 +289,13 @@
     .listaProdutos {
       display: flex; /* Exibe o menu normalmente */
       flex-direction: column; /* Alinha os itens na vertical */
-      padding: 0;
+      font-size: 13px;
+      
     }
   
     .navegacaoProdutosItens {
-      margin: 10px 0; /* Espaçamento entre os itens no menu */
+      margin: 5px; /* Espaçamento entre os itens no menu */
+      
     }
   
     /* Ajusta a exibição da imagem home no menu */
@@ -316,18 +318,30 @@
       display: none;
       justify-content: center;
     }
-    .btn-primary.btn-primary.btn-lg,.btn.btn-outline-primary{
-      max-width: 100%;
-      background-color: #0059ab;
-      font-size: 15px;
-      color: #f6f6f6;
-      max-width: 100%;
-    }
+
     #btnVerMais{
       width: auto;
     }
+
+    .loginNav{
+      display: flex;
+      background-color: #e5920c;
+      width: 150px;
+      color: #f6f6f6;
+      border-radius: 20px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .loginNav img {
+      width: 25;
+      height: 25px;
+      border-radius: 50%;
+    }
+    
   }
   
+  /*dispositivos médios*/
   @media (min-width: 769px) and (max-width: 1045px) {
         
     #formBusca{
@@ -343,31 +357,17 @@
     .listaProdutos {
       display: flex; /* Exibe o menu normalmente */
       flex-direction: column; /* Alinha os itens na vertical */
-      padding: 0;
+      font-size: 13px;
     }
   
     .navegacaoProdutosItens {
-      margin: 10px 0; /* Espaçamento entre os itens no menu */
+      margin: 5px; /* Espaçamento entre os itens no menu */
     }
   
     /* Ajusta a exibição da imagem home no menu */
     .home {
-      width: 30px;
-      height: 30px;
-    }
-    .btn-primary.btn-primary.btn-lg,.btn.btn-outline-primary{
-      max-width: 100%;
-      background-color: #0059ab;
-      font-size: 15px;
-      color: #f6f6f6;
-      max-width: 50%;
-    }
-    
-    .btn-primary.btn-primary.btn-lg:hover{
-      background-color: #99caf7;
-      font-size: 15px;
-      color: #0059ab;
-      border: none;
+      width: 20px;
+      height: 20px;
     }
     #pacotes {
       display: grid;
@@ -377,15 +377,42 @@
       display: none;
       justify-content: center;
     }
+    #btnVerMais{
+      width: auto;
+    }
+
+    .loginNav{
+      display: flex;
+      background-color: #e5920c;
+      width: 90px;
+      color: #f6f6f6;
+      border-radius: 20px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .loginNav span{
+      display: none;
+    }
+    
+    .loginNav img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+    }
     
   }
 
+  /*desktop*/
   @media (min-width: 769px) {
     .listaProdutos {
       display: flex; /* Exibe o menu normalmente em desktops */
       position: static;
       flex-direction: row;
       padding: 0;
+    }
+    #btnVerMais{
+      width: auto;
     }
   }
   
