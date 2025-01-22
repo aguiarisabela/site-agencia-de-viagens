@@ -1,0 +1,433 @@
+/*para remover a formatação padrão do navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   /*fotmatação da imagem principal, por enquanto apenas uma. No futuro adicionarei um carrossel*/
+   #cabecalhoCarrossel img {
+    width: 100%;
+  }
+  
+  /*Lista de oferecimentos do site*/
+  .listaProdutos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navegacaoProdutosItens {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /*fotmatação dos links (cor e margem interna; lado direito)*/
+  #navegacao a {
+    color: #f6f6f6;
+    margin-right: 10px;
+  }
+  
+  /*fotmatação do menu de navegação.*/
+  #navegacao {
+    background-color: #0059ab;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    padding: 10px;
+    align-content: center;
+  }
+  .loginNav{
+    display: flex;
+    background-color: #e5920c;
+    width: 180px;
+    color: #f6f6f6;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .loginNav img {
+    width: 35;
+    height: 35px;
+    border-radius: 50%;
+  }
+  
+  .loginNav span {
+    margin-left: auto;
+    padding: 0 10px;
+  }
+  .home img{
+    width: 15px;
+    height: auto;
+  }
+  
+  .form-container{
+    margin-bottom: 25px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #formPrincipal{
+    display: flex;
+    justify-content: center;
+  }
+  
+  #formBusca{
+    background-color: #f0d399f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.216);
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", serif;
+    border-radius: 30px;
+    padding: 15px;
+  }
+  
+  .form-label{
+    font-weight: bold;
+  }
+  
+  .btn-primary.btn-primary.btn-lg,.btn.btn-outline-primary{
+    background-color: #0059ab;
+    font-size: 15px;
+    color: #f6f6f6;
+  }
+  
+  .btn.btn-outline-primary:hover{
+    background-color: #99caf7;
+    font-size: 15px;
+    color: #0059ab;
+    border: none;
+  }
+  
+  .btn-primary.btn-primary.btn-lg:hover{
+    background-color: #99caf7;
+    font-size: 15px;
+    color: #0059ab;
+    border: none;
+  }
+  
+  #titulo-pacotes {
+    font-family: "Montserrat", serif;
+    padding: 0.25em;
+    margin-left: 70px;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  #pacotes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /*centraliza todos os cards*/
+    gap: 20px; /*esse é o espaçamento entre os cards*/
+  }
+  
+  .primeiroPacote,
+  .segundoPacote,
+  .terceiroPacote,
+  .quartoPacote {
+    background-color: #f6f6f6;
+    width: auto;
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.216);
+    justify-content: space-around;
+    margin-bottom: 3.5em;
+    margin-top: 0.5em;
+  }
+  
+  .primeiroPacote img,
+  .segundoPacote img,
+  .terceiroPacote img,
+  .quartoPacote img {
+    width: 350px;
+    border-radius: 10px;
+  }
+  
+  #informacoes-pacote {
+    padding: 15px;
+    border: #6b6b6b;
+  }
+  
+  .titulo-pacote {
+    font-family: "Noto Sans", serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #6b6b6b;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .titulo-cidade {
+    font-family: "Public Sans", serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .saida {
+    font-family: "Noto Sans", serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #6b6b6b;
+    margin-bottom: 8px;
+  }
+  
+  .descricao-1 {
+    font-family: "Noto Sans", serif;
+    text-transform: uppercase;
+    color: #6b6b6b;
+    margin-bottom: 25px;
+  }
+  
+  #descricao-do-card{
+    padding: 5px;
+  }
+  
+  .promocao {
+    background-color: rgb(206, 248, 216);
+    width: 150px;
+    border-radius: 10px;
+    padding: 3px;
+    font-family: "Noto Sans", serif;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: -35px;
+    left: 10px;
+  }
+  
+  .texto-decorativo {
+    color: rgb(14, 111, 53);
+  }
+  
+  .subtitulo-preco {
+    font-family: "Public Sans", serif;
+    font-size: 12px;
+    margin-top: -5px;
+  }
+  
+  .preco-estilizado {
+    font-family: "Public Sans", serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    text-decoration: line-through;
+    color: #6b6b6b;
+  }
+  
+  .preco-promocional-final {
+    font-family: "Public Sans", serif;
+    font-size: 16px;
+    align-items: center;
+  }
+  
+  .preco-final-dois{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  #rodapePrincipal {
+    text-align: center;
+    margin-top: 50px;
+    padding: 26px 25px 50px 25px;
+    background-color: #f6f6f6;
+  }
+  
+  /*formatação imagem, card dos DESTINOS*/
+  
+  #destino {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /*centraliza todos os cards*/
+    gap: 20px; /*esse é o espaçamento entre os cards*/
+  }
+  
+  #titulo-destinos {
+    font-family: "Montserrat", serif;
+    padding: 0.25em;
+    margin-left: 90px;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .primeiroDestino,
+  .segundoDestino,
+  .terceiroDestino,
+  .quartoDestino {
+    background-color: #f6f6f6;
+    width: auto;
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.216);
+    justify-content: space-around;
+    margin-bottom: 3.5em;
+    margin-top: 0.5em;
+  }
+  
+  .primeiroDestino img,
+  .segundoDestino img,
+  .terceiroDestino img,
+  .quartoDestino img {
+    width: 350px;
+    border-radius: 10px;
+  }
+  
+  .estilizacao-link{
+    text-decoration: none;
+    color: #000; /*cor que ficará o texto, mesmo com o link*/
+  }
+  
+  a:visited {
+    color: #000; /* Define a mesma cor do link ao nao clicar */
+  }
+  
+  a:hover {
+    color: #555; /* Cor altera ao passar o mouse em cima do card*/
+  }
+  
+  /*dispositivos pequenos*/
+  @media (max-width: 768px) { 
+          
+    #formBusca{
+      background-color: #f0d399f9;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.216);
+      max-width: 350px;
+      display: flex;
+      justify-content: center;
+      font-family: "Montserrat", serif;
+      border-radius: 30px;
+      padding: 15px;
+    }
+  
+    .listaProdutos {
+      display: flex; /* Exibe o menu normalmente */
+      flex-direction: column; /* Alinha os itens na vertical */
+      font-size: 13px;
+      
+    }
+  
+    .navegacaoProdutosItens {
+      margin: 5px; /* Espaçamento entre os itens no menu */
+      
+    }
+  
+    /* Ajusta a exibição da imagem home no menu */
+    .home {
+      width: 30px;
+      height: 30px;
+    }
+    #titulo-pacotes {
+      font-family: "Montserrat", serif;
+      padding: 0.10em;
+      margin-left: 30px;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+    #pacotes {
+      display: grid;
+      justify-content: center;
+    }
+    #pacotes-extra{
+      display: none;
+      justify-content: center;
+    }
+  
+    #btnVerMais{
+      width: auto;
+    }
+  
+    .loginNav{
+      display: flex;
+      background-color: #e5920c;
+      width: 150px;
+      color: #f6f6f6;
+      border-radius: 20px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .loginNav img {
+      width: 25;
+      height: 25px;
+      border-radius: 50%;
+    }
+    
+  }
+  
+  /*dispositivos médios*/
+  @media (min-width: 769px) and (max-width: 1045px) {
+          
+    #formBusca{
+      background-color: #f0d399f9;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.216);
+      max-width: 400px;
+      display: flex;
+      justify-content: center;
+      font-family: "Montserrat", serif;
+      border-radius: 30px;
+      padding: 15px;
+    }
+    .listaProdutos {
+      display: flex; /* Exibe o menu normalmente */
+      flex-direction: column; /* Alinha os itens na vertical */
+      font-size: 13px;
+    }
+  
+    .navegacaoProdutosItens {
+      margin: 5px; /* Espaçamento entre os itens no menu */
+    }
+  
+    /* Ajusta a exibição da imagem home no menu */
+    .home {
+      width: 30px;
+      height: 30px;
+    }
+    #pacotes {
+      display: grid;
+      justify-content: center;
+    }
+    #pacotes-extra{
+      display: none;
+      justify-content: center;
+    }
+    #btnVerMais{
+      width: auto;
+    }
+  
+    .loginNav{
+      display: flex;
+      background-color: #e5920c;
+      width: 90px;
+      color: #f6f6f6;
+      border-radius: 20px;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .loginNav span{
+      display: none;
+    }
+    
+    .loginNav img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+    }
+    
+  }
+  
+  /*desktop*/
+  @media (min-width: 769px) {
+    .listaProdutos {
+      display: flex; /* Exibe o menu normalmente em desktops */
+      position: static;
+      flex-direction: row;
+      padding: 0;
+    }
+    #btnVerMais{
+      width: auto;
+    }
+  }
+  

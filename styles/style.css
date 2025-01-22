@@ -135,6 +135,7 @@
   justify-content: space-around;
   margin-bottom: 3.5em;
   margin-top: 0.5em;
+
 }
 
 .primeiroPacote img,
@@ -318,24 +319,13 @@ a:hover {
     width: 30px;
     height: 30px;
   }
+
   #titulo-pacotes {
     font-family: "Montserrat", serif;
     padding: 0.10em;
     margin-left: 30px;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
-  }
-  #pacotes {
-    display: grid;
-    justify-content: center;
-  }
-  #pacotes-extra{
-    display: none;
-    justify-content: center;
-  }
-
-  #btnVerMais{
-    width: auto;
   }
 
   .loginNav{
@@ -369,9 +359,10 @@ a:hover {
     border-radius: 30px;
     padding: 15px;
   }
+
   .listaProdutos {
     display: flex; /* Exibe o menu normalmente */
-    flex-direction: column; /* Alinha os itens na vertical */
+   flex-direction: column; /* Alinha os itens na vertical */
     font-size: 13px;
   }
 
@@ -383,17 +374,6 @@ a:hover {
   .home {
     width: 30px;
     height: 30px;
-  }
-  #pacotes {
-    display: grid;
-    justify-content: center;
-  }
-  #pacotes-extra{
-    display: none;
-    justify-content: center;
-  }
-  #btnVerMais{
-    width: auto;
   }
 
   .loginNav{
@@ -425,8 +405,5 @@ a:hover {
     position: static;
     flex-direction: row;
     padding: 0;
-  }
-  #btnVerMais{
-    width: auto;
   }
 }
