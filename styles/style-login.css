@@ -4,110 +4,155 @@
     padding: 0;
     box-sizing: border-box;
   }
-   /*fotmatação da imagem principal, por enquanto apenas uma. No futuro adicionarei um carrossel*/
-   #cabecalhoCarrossel img {
-    width: 100%;
-  }
-  
-  /*Lista de oferecimentos do site*/
-  .listaProdutos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .navegacaoProdutosItens {
-    display: flex;
-    justify-content: center;
-  }
-  
-  /*fotmatação dos links (cor e margem interna; lado direito)*/
-  #navegacao a {
-    color: #f6f6f6;
-    margin-right: 10px;
-  }
-  
-  /*fotmatação do menu de navegação.*/
-  #navegacao {
-    background-color: #0059ab;
-    font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    padding: 10px;
-    align-content: center;
-  }
-  .loginNav{
-    display: flex;
-    background-color: #e5920c;
-    width: 180px;
-    color: #f6f6f6;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .loginNav img {
-    width: 35;
-    height: 35px;
-    border-radius: 50%;
-  }
-  
-  .loginNav span {
-    margin-left: auto;
-    padding: 0 10px;
-  }
-  .home img{
-    width: 15px;
-    height: auto;
-  }
-  
-  .form-container{
-    margin-bottom: 25px;
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  #formPrincipal{
-    display: flex;
-    justify-content: center;
-  }
-  
-  #formBusca{
-    background-color: #f0d399f9;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.216);
-    max-width: 800px;
-    display: flex;
-    justify-content: center;
-    font-family: "Montserrat", serif;
-    border-radius: 30px;
-    padding: 15px;
-  }
-  
-  .form-label{
-    font-weight: bold;
-  }
-  
-  .btn-primary.btn-primary.btn-lg,.btn.btn-outline-primary{
-    background-color: #0059ab;
-    font-size: 15px;
-    color: #f6f6f6;
-  }
-  
-  .btn.btn-outline-primary:hover{
-    background-color: #99caf7;
-    font-size: 15px;
-    color: #0059ab;
-    border: none;
-  }
-  
-  .btn-primary.btn-primary.btn-lg:hover{
-    background-color: #99caf7;
-    font-size: 15px;
-    color: #0059ab;
-    border: none;
-  }
 
+  /* Definições gerais */
+body {
+  font-family: 'Montserrat', serif;
+  color: #f6f6f6;
+  background-color: #c7dff5;
+  margin: 0;
+  padding: 0;
+}
+
+#navegacao{
+  background-color: #0059ab;
+  
+}
+
+.navbar-collapse {
+  justify-content: center;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.navbar{
+  display: flex;
+
+}
+.nav-item.loginNav{
+  background-color: #e5920c;
+  width: 205px;
+  color: #f6f6f6;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: space-between;
+  align-self: center;
+ }
+.avatar img {
+  height: 25px;
+  border-radius: 50%;
+}
+
+.nav-item.loginNav span {
+  padding: 0 10px;
+  font-size: 16px;
+  align-self: center;
+}
+
+.nav-link{
+  align-content: center;
+}
+
+.navbar-dark, .navbar[data-bs-theme=dark] {
+  justify-content: end;
+}
+
+ /*fotmatação da imagem principal, por enquanto apenas uma. No futuro adicionarei um carrossel*/
+ #cabecalhoCarrossel img {
+  width: 100%;
+}
+
+/*fotmatação dos links (cor e margem interna; lado direito)*/
+#navegacao a {
+  color: #f6f6f6;
+  margin-right: 10px;
+  font-family: "Montserrat", serif;
+  font-weight: bold;
+}
+
+
+.home img{
+  width: 15px;
+  height: auto;
+}
+
+
+.loginNav a {
+  display: flex;
+  align-items: center;
+  background-color: #e5920c;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.loginNav img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.login-box {
+  background: #0059ab;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+a{
+  color: #e5920c;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.form-control {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #f6f6f6;
+}
+
+.form-control::placeholder {
+  color: rgba(246, 246, 246, 0.7);
+}
+
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.3);
+  color: #f6f6f6;
+}
+
+.forgot-password {
+  color: #e5920c;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.btn-login {
+  background-color: #e5920c;
+  color: #f6f6f6;
+  font-weight: 600;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-login:hover {
+  background-color: #d37f08;
+}
   
   /*dispositivos pequenos*/
   @media (max-width: 768px) { 

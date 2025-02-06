@@ -1,203 +1,274 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  /*Lista de oferecimentos do site*/
-.listaProdutos {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#navegacao {
+  background-color: #0059ab;
+}
+
+.navbar-collapse {
+  justify-content: center;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+}
+.nav-item.loginNav {
+  background-color: #e5920c;
+  width: 205px;
+  color: #f6f6f6;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: space-between;
+  align-self: center;
+}
+.avatar img {
+  height: 25px;
+  border-radius: 50%;
+}
+
+.nav-item.loginNav span {
+  padding: 0 10px;
+  font-size: 16px;
+  align-self: center;
+}
+
+.nav-link {
+  align-content: center;
+}
+
+.navbar-dark,
+.navbar[data-bs-theme="dark"] {
+  justify-content: end;
+}
+
+/*fotmatação da imagem principal, por enquanto apenas uma. No futuro adicionarei um carrossel*/
+#cabecalhoCarrossel img {
+  width: 100%;
+}
+
+/*fotmatação dos links (cor e margem interna; lado direito)*/
+#navegacao a {
+  color: #f6f6f6;
+  margin-right: 10px;
+  font-family: "Montserrat", serif;
+  font-weight: bold;
+}
+
+.home img {
+  width: 15px;
+  height: auto;
+}
+
+.loginNav a {
+  display: flex;
+  align-items: center;
+  background-color: #e5920c;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.loginNav img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.login-box {
+  background: #0059ab;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+a {
+  color: #e5920c;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.form-control {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #f6f6f6;
+}
+
+.form-control::placeholder {
+  color: rgba(246, 246, 246, 0.7);
+}
+
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.3);
+  color: #f6f6f6;
+}
+
+.forgot-password {
+  color: #e5920c;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.btn-login {
+  background-color: #e5920c;
+  color: #f6f6f6;
+  font-weight: 600;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-login:hover {
+  background-color: #d37f08;
+}
+
+/*dispositivos pequenos*/
+@media (max-width: 768px) {
+  #formBusca {
+    background-color: #f0d399f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.216);
+    max-width: 350px;
     display: flex;
-    align-items: center;
     justify-content: center;
-  }
-  
-  .navegacaoProdutosItens {
-    display: flex;
-    justify-content: center;
-  }
-  
-  /*fotmatação dos links (cor e margem interna; lado direito)*/
-  #navegacao a {
-    color: #f6f6f6;
-    margin-right: 10px;
-  }
-  
-  /*fotmatação do menu de navegação.*/
-  #navegacao {
-    background-color: #0059ab;
     font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    padding: 10px;
-    align-content: center;
+    border-radius: 30px;
+    padding: 15px;
   }
-  .loginNav{
+
+  .listaProdutos {
+    display: flex; /* Exibe o menu normalmente */
+    flex-direction: column; /* Alinha os itens na vertical */
+    font-size: 13px;
+  }
+
+  .navegacaoProdutosItens {
+    margin: 5px; /* Espaçamento entre os itens no menu */
+  }
+
+  /* Ajusta a exibição da imagem home no menu */
+  .home {
+    width: 20px;
+    height: 20px;
+  }
+  #titulo-pacotes {
+    font-family: "Montserrat", serif;
+    padding: 0.1em;
+    margin-left: 30px;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  #pacotes {
+    display: grid;
+    justify-content: center;
+  }
+  #pacotes-extra {
+    display: none;
+    justify-content: center;
+  }
+
+  #btnVerMais {
+    width: auto;
+  }
+
+  .loginNav {
     display: flex;
     background-color: #e5920c;
-    width: 180px;
+    width: 150px;
     color: #f6f6f6;
     border-radius: 20px;
     align-items: center;
     justify-content: space-between;
   }
-  
+
   .loginNav img {
-    width: 35;
+    width: 25;
+    height: 25px;
+    border-radius: 50%;
+  }
+}
+
+/*dispositivos médios*/
+@media (min-width: 769px) and (max-width: 1045px) {
+  #formBusca {
+    background-color: #f0d399f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.216);
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", serif;
+    border-radius: 30px;
+    padding: 15px;
+  }
+  .listaProdutos {
+    display: flex; /* Exibe o menu normalmente */
+    flex-direction: column; /* Alinha os itens na vertical */
+    font-size: 13px;
+  }
+
+  .navegacaoProdutosItens {
+    margin: 5px; /* Espaçamento entre os itens no menu */
+  }
+
+  /* Ajusta a exibição da imagem home no menu */
+  .home {
+    width: 25px;
+    height: 25px;
+  }
+  #pacotes {
+    display: grid;
+    justify-content: center;
+  }
+  #pacotes-extra {
+    display: none;
+    justify-content: center;
+  }
+  #btnVerMais {
+    width: auto;
+  }
+
+  .loginNav {
+    display: flex;
+    background-color: #e5920c;
+    width: 90px;
+    color: #f6f6f6;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .loginNav span {
+    display: none;
+  }
+
+  .loginNav img {
+    width: 35px;
     height: 35px;
     border-radius: 50%;
   }
-  
-  .loginNav span {
-    margin-left: auto;
-    padding: 0 10px;
+}
+
+/*desktop*/
+@media (min-width: 769px) {
+  .listaProdutos {
+    display: flex; /* Exibe o menu normalmente em desktops */
+    position: static;
+    flex-direction: row;
+    padding: 0;
   }
-  .home img{
-    width: 15px;
-    height: auto;
+  #btnVerMais {
+    width: auto;
   }
-
-  
-  
-  /*dispositivos pequenos*/
-  @media (max-width: 768px) { 
-        
-    #formBusca{
-      background-color: #f0d399f9;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.216);
-      max-width: 350px;
-      display: flex;
-      justify-content: center;
-      font-family: "Montserrat", serif;
-      border-radius: 30px;
-      padding: 15px;
-    }
-  
-    .listaProdutos {
-      display: flex; /* Exibe o menu normalmente */
-      flex-direction: column; /* Alinha os itens na vertical */
-      font-size: 13px;
-      
-    }
-  
-    .navegacaoProdutosItens {
-      margin: 5px; /* Espaçamento entre os itens no menu */
-      
-    }
-  
-    /* Ajusta a exibição da imagem home no menu */
-    .home {
-      width: 20px;
-      height: 20px;
-    }
-    #titulo-pacotes {
-      font-family: "Montserrat", serif;
-      padding: 0.10em;
-      margin-left: 30px;
-      margin-top: 1.5em;
-      margin-bottom: 0.5em;
-    }
-    #pacotes {
-      display: grid;
-      justify-content: center;
-    }
-    #pacotes-extra{
-      display: none;
-      justify-content: center;
-    }
-
-    #btnVerMais{
-      width: auto;
-    }
-
-    .loginNav{
-      display: flex;
-      background-color: #e5920c;
-      width: 150px;
-      color: #f6f6f6;
-      border-radius: 20px;
-      align-items: center;
-      justify-content: space-between;
-    }
-    
-    .loginNav img {
-      width: 25;
-      height: 25px;
-      border-radius: 50%;
-    }
-    
-  }
-  
-  /*dispositivos médios*/
-  @media (min-width: 769px) and (max-width: 1045px) {
-        
-    #formBusca{
-      background-color: #f0d399f9;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.216);
-      max-width: 400px;
-      display: flex;
-      justify-content: center;
-      font-family: "Montserrat", serif;
-      border-radius: 30px;
-      padding: 15px;
-    }
-    .listaProdutos {
-      display: flex; /* Exibe o menu normalmente */
-      flex-direction: column; /* Alinha os itens na vertical */
-      font-size: 13px;
-    }
-  
-    .navegacaoProdutosItens {
-      margin: 5px; /* Espaçamento entre os itens no menu */
-    }
-  
-    /* Ajusta a exibição da imagem home no menu */
-    .home {
-      width: 25px;
-      height: 25px;
-    }
-    #pacotes {
-      display: grid;
-      justify-content: center;
-    }
-    #pacotes-extra{
-      display: none;
-      justify-content: center;
-    }
-    #btnVerMais{
-      width: auto;
-    }
-
-    .loginNav{
-      display: flex;
-      background-color: #e5920c;
-      width: 90px;
-      color: #f6f6f6;
-      border-radius: 20px;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .loginNav span{
-      display: none;
-    }
-    
-    .loginNav img {
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-    }
-    
-  }
-
-  /*desktop*/
-  @media (min-width: 769px) {
-    .listaProdutos {
-      display: flex; /* Exibe o menu normalmente em desktops */
-      position: static;
-      flex-direction: row;
-      padding: 0;
-    }
-    #btnVerMais{
-      width: auto;
-    }
-  }
-  
+}

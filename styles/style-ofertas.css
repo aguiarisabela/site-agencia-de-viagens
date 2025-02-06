@@ -11,53 +11,55 @@
   height: 100%;
 }
 
-/*Lista de oferecimentos do site*/
-.listaProdutos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.navegacaoProdutosItens {
-  display: flex;
-  justify-content: center;
-}
-
-/*fotmatação dos links (cor e margem interna; lado direito)*/
-#navegacao a {
-  color: #f6f6f6;
-  margin-right: 10px;
-}
-
-/*fotmatação do menu de navegação.*/
-#navegacao {
+#navegacao{
   background-color: #0059ab;
-  font-family: "Montserrat", serif;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  padding: 10px;
-  align-content: center;
+  
 }
 
-.loginNav {
+.navbar-collapse {
+  justify-content: center;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.navbar{
   display: flex;
+
+}
+.nav-item.loginNav{
   background-color: #e5920c;
-  width: 180px;
+  width: 205px;
   color: #f6f6f6;
-  border-radius: 20px;
+  border-radius: 30px;
   align-items: center;
   justify-content: space-between;
-}
-
-.loginNav img {
-  width: 35;
-  height: 35px;
+  align-self: center;
+ }
+.avatar img {
+  height: 25px;
   border-radius: 50%;
 }
 
-.loginNav span {
-  margin-left: auto;
+.nav-item.loginNav span {
   padding: 0 10px;
+  font-size: 16px;
+  align-self: center;
+}
+
+.nav-link{
+  align-content: center;
+}
+
+.navbar-dark, .navbar[data-bs-theme=dark] {
+  justify-content: end;
+}
+#navegacao a {
+  color: #f6f6f6;
+  margin-right: 10px;
+  font-family: "Montserrat", serif;
+  font-weight: bold;
 }
 
 .home img {
@@ -90,6 +92,10 @@
 
 .form-label {
   font-weight: bold;
+}
+
+#idaEVolta, #somenteIda, #multidestinos{
+  margin: 5px;
 }
 
 .btn-primary.btn-primary.btn-lg,
