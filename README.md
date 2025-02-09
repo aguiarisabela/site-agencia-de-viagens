@@ -62,3 +62,4 @@ Relacionamento: Um aluguel de veículo pode ser vinculado a uma reserva.
 Cardinalidade: 1:1 (uma reserva pode ter um aluguel de veículo, e um aluguel de veículo pertence a apenas uma reserva).
 
 ## Modelo Conceitual
+🖼️ [Veja aqui](https://github.com/aguiarisabela/site-agencia-de-viagens/blob/d74ae268ddd2a4f54a6701e586793a7f2991c7c9/modelagem/Captura%20de%20tela%202025-02-09%20150744.png)
