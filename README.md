@@ -36,3 +36,29 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 ---
 
 ## 🎲 Modelagem de Dados
+
+- **Usuário → Reserva:**
+Relacionamento: Um usuário pode fazer várias reservas, mas cada reserva pertence a um único usuário.
+Cardinalidade: 1:N (um usuário pode ter várias reservas, mas cada reserva pertence a apenas um usuário).
+
+- **Pacote de Viagem → Passagem Aérea:**
+Relacionamento: Um pacote pode conter várias passagens aéreas, mas cada passagem aérea pode pertencer a apenas um pacote.
+Cardinalidade: 1:N (um pacote pode ter muitas passagens, mas cada passagem pertence a um único pacote).
+
+- **Pacote de Viagem → Hospedagem:**
+Relacionamento: Um pacote pode conter várias hospedagens, mas cada hospedagem pode pertencer a apenas um pacote.
+Cardinalidade: 1:N (um pacote pode incluir muitas hospedagens, mas cada hospedagem pertence a apenas um pacote).
+
+- **Pacote de Viagem → Seguro Viagem:**
+Relacionamento: Um pacote pode conter vários seguros de viagem, mas cada seguro pode estar vinculado a apenas um pacote.
+Cardinalidade: 1:N (um pacote pode incluir muitos seguros, mas cada seguro pertence a apenas um pacote).
+
+- **Seguro Viagem → Reserva:**
+Relacionamento: Um seguro pode ser vinculado a uma reserva específica.
+Cardinalidade: 1:1 (uma reserva pode ter um seguro, e um seguro pertence a apenas uma reserva).
+
+- **Aluguel de Veículo → Reserva:**
+Relacionamento: Um aluguel de veículo pode ser vinculado a uma reserva.
+Cardinalidade: 1:1 (uma reserva pode ter um aluguel de veículo, e um aluguel de veículo pertence a apenas uma reserva).
+
+## Modelo Conceitual
